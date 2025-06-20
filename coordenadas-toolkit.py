@@ -28,7 +28,7 @@ class LoginWindow(tk.Tk):
             app = App()     # Crea y muestra la ventana principal
             app.mainloop()
         # Validación Tester
-        elif user == "Niko" and password == "Tester2123":
+        elif user == "Tester" and password == "Tester2123":
             self.destroy()
             app = App()
             app.mainloop()
