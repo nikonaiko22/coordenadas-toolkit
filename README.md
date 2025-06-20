@@ -132,6 +132,6 @@ To run the program:
 Make sure all .py files are in the same directory.
 
 👤 Author
-Developed by [Your Name]
-As part of a coursework project in [Name of University] — [Department/Course Title]
+Developed by [Nikonaiko22]
+As part of a coursework project in Universidad de Antofagasta — [Geomensura/Computación Avanzada]
 Year: 2025
