@@ -2,40 +2,6 @@ import tkinter as tk
 from math import atan, pi, cos, sin, sqrt
 from tkinter import messagebox
 
-class LoginWindow(tk.Tk):
-    def __init__(self):
-        super().__init__()
-        self.title("Login")
-        self.geometry("300x180")
-        self.configure(bg="#ecf0f1")
-
-        tk.Label(self, text="Usuario:", bg="#ecf0f1").pack(pady=(20,5))
-        self.user_entry = tk.Entry(self)
-        self.user_entry.pack()
-
-        tk.Label(self, text="Contraseña:", bg="#ecf0f1").pack(pady=(10,5))
-        self.pass_entry = tk.Entry(self, show="*")
-        self.pass_entry.pack()
-
-        tk.Button(self, text="Iniciar Sesión", command=self.check_login).pack(pady=15)
-
-    def check_login(self):
-        user = self.user_entry.get()
-        password = self.pass_entry.get()
-        # Validación Admin
-        if user == "Admin" and password == "911":
-            self.destroy()  # Cierra la ventana de login
-            app = App()     # Crea y muestra la ventana principal
-            app.mainloop()
-        # Validación Tester
-        elif user == "Tester" and password == "Tester2123":
-            self.destroy()
-            app = App()
-            app.mainloop()
-        else:
-            messagebox.showerror("Error", "Usuario o contraseña incorrectos")
-
-
 #empieza codigo 
 class App(tk.Tk):
     def __init__(self):
@@ -717,5 +683,5 @@ class App(tk.Tk):
             
 # Al ejecutar el script, abrir primero login
 if __name__ == "__main__":
-    login = LoginWindow()
-    login.mainloop()
+    App = App()
+    App.mainloop()
