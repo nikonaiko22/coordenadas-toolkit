@@ -2,7 +2,6 @@ import tkinter as tk
 from math import atan, pi, cos, sin, sqrt
 from tkinter import messagebox
 
-
 #empieza codigo 
 class App(tk.Tk):
     def __init__(self):
