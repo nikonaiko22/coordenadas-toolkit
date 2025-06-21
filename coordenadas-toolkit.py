@@ -681,7 +681,6 @@ class App(tk.Tk):
             f.place_forget()
         self.frames[key].place(relx=0, rely=0, relwidth=1, relheight=1)
             
-# Al ejecutar el script, abrir primero login
 if __name__ == "__main__":
     App = App()
     App.mainloop()
